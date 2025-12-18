@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>business profile</title>
+     <link rel="stylesheet" href="main.css">
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+    <style>
+       body {
+        background-color: #e1e0e0;
+      }
+         .video-container {
+  width: 100%;
+  max-width: 1000px;   /* optional */
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+
+.profile h1{
+    font-size: 50px;
+  text-align: center;
+  /* margin-top: 20px; */
+  color: #1a1a1a;
+  padding: 50px;        /* soft black */
+  font-weight: 600;
+  letter-spacing: 1px;
+   transform: translateY(20px);
+  /* opacity: 0; */
+  transition: 0.4s ease;
+}
+.profile h1:hover{
+  text-decoration: underline;
+  font-weight: 800; 
+  transform: translateY(0);
+}
+.profile p{  
+  text-align: center;
+ color: #1a1a1a;
+  padding-bottom: 50px;       
+  font-weight: 600;
+  letter-spacing: 0px;
+   transform: translateY(20px);
+
+  transition: 0.4s ease;
+}
+.profile p:hover{
+  text-decoration: underline;
+  font-weight: 800; 
+  transform: translateY(0);
+}
+.download-btns{
+    padding: 20px;
+}
+.btn{
+    position: relative;
+    left: 200px;
+}
+
+    </style>
+</head>
+<body>
+     <!-- navbar -->
+  <div>
+    <header class="sticky">
+      <a href="#" class="logo"><img src="img/jagat.png" alt="" /></a>
+
+      <ul class="navbar">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="welcome.html">WELCOME</a></li>
+        <li><a href="business.html">BUSINESS PROFILE</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <!-- <li> <a href="#"><i class="ri-shopping-cart-2-line"></i></a></li> -->
+      </ul>
+      <div class="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </header>
+
+  </div>
+  <br><br>
+    <!--business profile  -->
+    
+    <div class="profile">
+        <h1>BUSINESS PROFILE</h1>
+        <p>
+We create thoughtfully designed interiors that balance aesthetics and functionality. <br> Our goal is to deliver personalized spaces that reflect our clients’ vision while ensuring comfort, quality, and timeless appeal.
+</p>
+<div class="video-container">
+<video src="img/Video Project.mp4" class="video-container" controls loop></video>
+<div class="download-btns">
+  <a href="img/Grey Minimalist Interior Designer Business Card.pdf" download class="btn">Download Visiting Card</a>
+  <a href="img/Brown Minimalist Interior Design Company Presentation.pdf" download class="btn btn-outline">Download Company PDF</a>
+</div>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+     <img src="img/jagat.png" height="200x" width="300px" alt="">
+     
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>Social Media Links</h4>
+    <div class="social-icons">
+  <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+    <i class="ri-facebook-fill"></i>
+  </a>
+  <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="ri-instagram-fill"></i>
+  </a>
+  <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+    <i class="ri-twitter-fill"></i>
+  </a>
+  <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <i class="ri-linkedin-box-fill"></i>
+  </a>
+</div>
+ <p style="color: white; margin-right: 130px;">We provide the best quality services at affordable prices.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p style="color: white;">© 2025 Your Website. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

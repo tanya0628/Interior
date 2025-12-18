@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Design</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<style>
+    .welcome {
+  background-image: url('img/bg.jpg'); /* change your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 70vh;
+  /* padding: 120px 50px; */
+
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  /* color: #fff; */
+  position: relative;
+  text-align: center;      /* center text */
+}
+
+.welcome-text {
+  position: relative;
+  max-width: 700px;
+  z-index: 1;
+    transition: all 0.45s ease;
+}
+
+/* Heading Styles */
+.welcome-text h1 {
+    color: rgb(212, 170, 4);
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  transition: all 0.50s ease;
+}
+
+.welcome-text h4 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Paragraph */
+.welcome-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  transition: 0.3s ease;
+}
+
+/* Button */
+.welcome-text .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background:black;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.welcome-text .btn:hover {
+  background: rgb(189, 188, 188);
+  color: black;
+}
+    
+@media (max-width:768px) 
+{
+ .welcome-text h1{
+  font-size: 20px;
+  margin-top: 50px;
+ } 
+ .navbar{
+  margin-top: 50px;
+ }
+}
+body {
+        background-color: #e1e0e0;
+      }
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px;
+        padding: 80px 8%;
+        transition: all 0.45s ease;
+      }
+      .about-text h1 {
+        text-align: center;
+        font-size: 40px;
+        color: black;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        transition: all 0.45s ease;
+      }
+
+      .about-text p {
+        font-size: 15px;
+        color: black;
+        /* text-align: right; */
+        margin-bottom: 10px;
+        transition: all 0.45s ease;
+      }
+      .about-img img {
+        width: 70%;
+        height: 400px;
+      }
+      @media(max-width:900px){
+.about{ grid-template-columns:1fr; }
+.about-text h1{ font-size:38px; }
+.about-img{
+    align-items: center;
+    margin-left: 60px;
+}
+}
+ .video-container {
+  width: 100%;
+  max-width: 1000px;   /* optional */
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+
+.profile h1{
+    font-size: 50px;
+  text-align: center;
+  /* margin-top: 20px; */
+  color: #1a1a1a;
+  padding: 50px;        /* soft black */
+  font-weight: 600;
+  letter-spacing: 1px;
+   transform: translateY(20px);
+  /* opacity: 0; */
+  transition: 0.4s ease;
+}
+.profile h1:hover{
+  text-decoration: underline;
+  font-weight: 800; 
+  transform: translateY(0);
+}
+.profile p{  
+  text-align: center;
+ color: #1a1a1a;
+  padding-bottom: 50px;       
+  font-weight: 600;
+  letter-spacing: 0px;
+   transform: translateY(20px);
+
+  transition: 0.4s ease;
+}
+.profile p:hover{
+  text-decoration: underline;
+  font-weight: 800; 
+  transform: translateY(0);
+}
+.download-btns{
+    padding: 20px;
+}
+.btn{
+    position: relative;
+    left: 200px;
+}
+.service-form {
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+  max-width: 420px;
+  background: #f7f7f7;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.service-form h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.service-form p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background: #fff;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #111;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #333;
+}
+
+.service-form {
+  max-width: 420px;
+  margin: 80px auto;   /* centers horizontally */
+  background: #f7f7f7;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+</style>
+<body>
+  <!-- navbar -->
+  <div>
+    <header class="sticky">
+      <a href="#" class="logo"><img src="img/jagat.png" alt="" /></a>
+
+      <ul class="navbar">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="welcome.html">WELCOME</a></li>
+        <li><a href="business.html">BUSINESS PROFILE</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <!-- <li> <a href="#"><i class="ri-shopping-cart-2-line"></i></a></li> -->
+      </ul>
+      <div class="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </header>
+
+  </div>
+  <br><br>
+
+   <!-- welcome section -->
+    <section class="welcome">
+      <div class="welcome-text">
+         <h1>Welcome</h1>
+        <h4>To Our Company</h4>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tenetur provident magni velit inventore tempora corporis esse maxime qui, a tempore! Consectetur illo amet mollitia porro consequuntur ab ipsa sint?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit aliquam voluptas, illum ea consequatur ullam fuga minima hic harum eveniet consequuntur nostrum asperiores debitis nobis eos maxime eaque doloribus!</p>
+        <!-- <a href="#" class="btn"> Explore now</a> -->
+      </div>
+    </section>
+
+
+     <!-- about us section -->
+    <div class="about-content">
+      <h1>About Us</h1>
+    </div>
+    <!--  -->
+    <section class="about">
+      <div class="about-text">
+        <h1>Our Vision</h1>
+        <p>
+          Our vision is to create inspiring, functional, and timeless interior
+          spaces that reflect individuality, comfort, and modern living. We
+          believe that interior design is more than just aesthetics—it is about
+          creating environments that support lifestyle, purpose, and well-being.
+          Every space we design is thoughtfully planned to balance beauty with
+          usability.
+        </p>
+
+        <p>
+          By blending creativity with practicality, we focus on details that
+          make a meaningful difference. From material selection to layout
+          planning, our approach ensures harmony, elegance, and efficiency in
+          every project. We strive to design interiors that feel personal,
+          welcoming, and visually refined.
+        </p>
+
+        <p>
+          Our goal is to transform spaces into experiences that inspire everyday
+          living. Whether residential or commercial, we aim to deliver designs
+          that are enduring, adaptable, and aligned with our clients’ vision—spa
+        </p>
+      </div>
+
+      <div class="about-img">
+        <img
+          src="img/cafe.jpg"
+          alt="interior"
+        />
+      </div>
+    </section>
+
+    <!--  -->
+<hr>
+    <section class="about">
+      <div class="about-img">
+        <img
+          src="img/living.jpg"
+          alt="interior"
+        />
+      </div>
+      <div class="about-text">
+        <h1>Our Approach</h1>
+        <p>
+          Our vision is to create inspiring, functional, and timeless interior
+          spaces that reflect individuality, comfort, and modern living. We
+          believe that interior design is more than just aesthetics—it is about
+          creating environments that support lifestyle, purpose, and well-being.
+          Every space we design is thoughtfully planned to balance beauty with
+          usability.
+        </p>
+
+        <p>
+          By blending creativity with practicality, we focus on details that
+          make a meaningful difference. From material selection to layout
+          planning, our approach ensures harmony, elegance, and efficiency in
+          every project. We strive to design interiors that feel personal,
+          welcoming, and visually refined.
+        </p>
+
+        <p>
+          Our goal is to transform spaces into experiences that inspire everyday
+          living. Whether residential or commercial, we aim to deliver designs
+          that are enduring, adaptable, and aligned with our clients’ vision—spa
+        </p>
+      </div>
+
+    </section>
+    <hr>
+     <section class="about">
+      <div class="about-text">
+        <h1>Why Choose Us?</h1>
+        <p>
+          Our vision is to create inspiring, functional, and timeless interior
+          spaces that reflect individuality, comfort, and modern living. We
+          believe that interior design is more than just aesthetics—it is about
+          creating environments that support lifestyle, purpose, and well-being.
+          Every space we design is thoughtfully planned to balance beauty with
+          usability.
+        </p>
+
+        <p>
+          By blending creativity with practicality, we focus on details that
+          make a meaningful difference. From material selection to layout
+          planning, our approach ensures harmony, elegance, and efficiency in
+          every project. We strive to design interiors that feel personal,
+          welcoming, and visually refined.
+        </p>
+
+        <p>
+          Our goal is to transform spaces into experiences that inspire everyday
+          living. Whether residential or commercial, we aim to deliver designs
+          that are enduring, adaptable, and aligned with our clients’ vision—spa
+        </p>
+      </div>
+
+      <div class="about-img">
+        <img
+          src="img/wall.jpg"
+          alt="interior"
+        />
+      </div>
+    </section>
+
+ <!--business profile  -->
+    
+    <div class="profile">
+        <h1>BUSINESS PROFILE</h1>
+        <p>
+We create thoughtfully designed interiors that balance aesthetics and functionality. <br> Our goal is to deliver personalized spaces that reflect our clients’ vision while ensuring comfort, quality, and timeless appeal.
+</p>
+<div class="video-container">
+<video src="img/Video Project.mp4" class="video-container" controls loop></video>
+<div class="download-btns">
+  <a href="img/Grey Minimalist Interior Designer Business Card.pdf" download class="btn">Download Visiting Card</a>
+  <a href="img/Brown Minimalist Interior Design Company Presentation.pdf" download class="btn btn-outline">Download Company PDF</a>
+</div>
+
+    </div>
+
+  <!-- service section -->
+  <section class="feature">
+    <div class="middle-text">
+      <h1>OUR SERVICES</h1>
+      <h2 class="section-title"> Interior Designing Services</h2>
+    </div>
+  </section>
+
+
+
+  <section class="category-section">
+
+
+
+    <div class="category-grid">
+
+      <div class="category-card">
+        <img src="img/home.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Complete Home Interior</h3>
+        
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+      <div class="category-card">
+        <img src="img/living.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Living Room Design</h3>
+       
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+      <div class="category-card">
+        <img src="img/bedroom.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Bedroom Interior</h3>
+     
+        <a href="form.html" class="shop-btn">Quick Add</a>
+
+      </div>
+
+      <div class="category-card">
+        <img src="img/kitchen.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Modular Kitchen</h3>
+        
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+
+
+    </div>
+    <div class="category-grid">
+
+      <div class="category-card">
+        <img src="img/bathroom.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Bathroom Interior</h3>
+       
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+      <div class="category-card">
+        <img src="img/wardrobe.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Wardrobe & Storage Design</h3>
+       
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+      <div class="category-card">
+        <img src="img/office.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Office Interior Design</h3>
+       
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+      <div class="category-card">
+        <img src="img/reatil.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Retail & Showroom Design</h3>
+       
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+
+
+    </div>
+
+    <div class="category-grid">
+
+      <div class="category-card">
+        <img src="img/cafe.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>
+          Café & Restaurant Interior</h3>
+       
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+      <div class="category-card">
+        <img src="img/clinic.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Clinic / Hospital Interior</h3>
+        
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+      <div class="category-card">
+        <img src="img/corporate.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Corporate Workspace Design</h3>
+        
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+      <div class="category-card">
+        <img src="img/space.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Space Planning</h3>
+        
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+
+
+    </div>
+
+    <div class="category-grid">
+
+      <div class="category-card">
+        <img src="img/furnititure.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3> Furniture Customization</h3>
+        
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+      <div class="category-card">
+        <img src="img/light.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>False Ceiling & Lighting</h3>
+       
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+      <div class="category-card">
+        <img src="img/wall.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Wallpaper & Wall Panels</h3>
+       
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+      <div class="category-card">
+        <img src="img/floor.jpg" alt="">
+        <div class="overlay-text">Book Now</div>
+        <h3>Wooden Flooring</h3>
+       
+        <a href="form.html" class="shop-btn">Quick Add</a>
+      </div>
+
+
+
+    </div>
+
+   
+  </div>
+
+ <!-- contact us section -->
+    
+  
+      <section class="service-form">
+  <h2>Request Our Services</h2>
+  <p>Share your details and we’ll get back to you shortly.</p>
+
+  <form>
+    <div class="form-group">
+      <input type="text" placeholder="Full Name" required>
+    </div>
+
+    <div class="form-group">
+      <input type="tel" placeholder="Mobile Number" required>
+    </div>
+
+    <div class="form-group">
+      <input type="tel" placeholder="Mention service" required>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Request</button>
+  </form>
+</section>
+
+        
+
+ <!-- footer -->
+    <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+     <img src="img/jagat.png" height="200x" width="300px" alt="">
+     
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>Social Media Links</h4>
+    <div class="social-icons">
+  <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+    <i class="ri-facebook-fill"></i>
+  </a>
+  <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="ri-instagram-fill"></i>
+  </a>
+  <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+    <i class="ri-twitter-fill"></i>
+  </a>
+  <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <i class="ri-linkedin-box-fill"></i>
+  </a>
+</div>
+ <p>We provide the best quality services at affordable prices.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Your Website. All rights reserved.</p>
+  </div>
+</footer>
+
+      <script src="script.js"></script>
+</body>
+
+</html>
