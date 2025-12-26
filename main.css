@@ -433,3 +433,42 @@ padding: 10px;
     margin: 6px 0;
   }
 }
+
+
+.floating-contact {
+  position: fixed;          /* scroll ke saath gayab nahi honge */
+  right: 22px;              /* right side */
+  bottom: 30%;              /* vertically center-ish */
+  display: flex;
+  flex-direction: column;   /* ek ke niche ek */
+  gap: 16px;
+  z-index: 9999;
+}
+
+.floating-contact a {
+  width: 64px;              /* ICON SIZE BADAYA */
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;          /* icon bada */
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+/* Individual colors */
+.floating-contact .call {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.floating-contact .whatsapp {
+  background: linear-gradient(135deg, #25D366, #1aa851);
+}
+
+/* Hover animation */
+.floating-contact a:hover {
+  transform: scale(1.15);
+}
